@@ -1,0 +1,33 @@
+.scroll-container {
+      max-height: 107vh;
+      height: 100%;
+      width: 1px !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+    }
+    .scroll {
+      max-width: 100% !important;
+    }
+    .swiper-container {
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .card {
+      width: 100%;
+      overflow: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem -0.5rem rgba(24, 28, 32, 0.5);
+    }
+
+    .form-control, .btn {
+      border-radius: 0.5rem;
+    }
+
+    .curp {
+      cursor: pointer;
+    }
