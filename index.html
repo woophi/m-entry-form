@@ -72,12 +72,12 @@
                     <input type="text" class="form-control" id="phone" placeholder="Telefon">
                   </div>
                 </form>
+                <button id="getlanguage" class="btn btn-primary mt-0 d-inline-block">
+                  Get language
+                </button>
                 <div class="text-center">
                   <button type="submit" form="main_form" class="btn btn-primary mt-3">
                     Pokračovat
-                  </button>
-                  <button id="getlanguage" class="btn btn-primary mt-0 d-inline-block">
-                    Get language
                   </button>
                 </div>
               </div>
@@ -184,7 +184,7 @@
       window.parent.postMessage({
         type: "ENQUEUE"
       }, "*");
-    })
+    });
 
     $('#getlanguage').click(function (e) {
       e.preventDefault();
@@ -192,7 +192,7 @@
       window.parent.postMessage({
         type: "GET_MLUVII_LANGUAGE",
       }, "*");
-    })
+    });
   </script>
 </body>
 
